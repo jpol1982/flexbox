@@ -180,7 +180,7 @@ padding: 1px;
   {
     margin-top: 16px;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
 
   }
   
@@ -191,6 +191,10 @@ padding: 1px;
     background-color: #aaa;
     width: 330px;
     padding: 20px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: cover 
+
   }
   
 .informacion {
@@ -224,10 +228,19 @@ padding: 1px;
   {
     list-style: none;
     margin-right: 20px;
+    font-size: 20px;
     padding: 4px;
   }
 
+  .listaInformacion a {
+    text-decoration: none;
+    color: #080808;
+    transition: all 0.3s ease 0s;
+}
 
+.listaInformacion a:hover {
+    color: #b2dfdb;
+}
 
 
 
@@ -434,6 +447,9 @@ padding: 1px;
       line-height: 40px;
     }
     
+    .nav_secundaria ul{
+      flex-direction: column;
+    }
     
   }
 
