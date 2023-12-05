@@ -422,29 +422,20 @@ padding: 1px;
       flex-direction: column;
     }
 
-    .nav_secundaria ul
-    {
-        flex-direction: column;
+    .containerTexto {
+      align-items: center;
+      flex-direction: column;
+      
     }
 
-
-    .flex-container {
-        
-        flex-direction: column;
-      }
-
-      .flex-container .texto
-  { height: 50px;
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .flex-container > div {
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
+    .containerTexto .texto {
+      font-size: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+    
     
   }
-    
-  }
+
+
 
