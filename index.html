@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar Uno</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body onload="startTime()">
+   
+    <header >
+        <nav class="nav_principal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="division">|</li>
+                <li><a href="#">Eventos</a></li>
+                <li class="division">|</li>
+                <li><a href="#">Noticias</a></li>
+                <li class="division">|</li>
+                <li><a href="#">Contactos</a></li>
+                <li class="division">|</li>
+                <li><a href="#">Noticias</a></li>
+                <li class="division">|</li>
+                <li>login</li>
+                <li><input type="search" placeholder="" id="Buscador" /><button class="button" id="botonMenu1" >Buscar</button><button class="button" onclick="colorBotonesMenu()" id="botonMenu2">Marca</button></li>
+            </ul>
+         </nav>  
+    </header>
+
+   
+
+    <div class="containerTexto">
+        <div  >CELULARES</div>
+        <div class="texto" id="clock"></div>
+        <div class="texto">TELCEL</div>
+      </div>
+
+
+
+
+    <header >
+        <nav class="nav_secundaria">
+            <ul>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">PARTES</a></li> 
+                <li><a href="#">SOPORTE</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+            </ul>
+         </nav>  
+    </header>
+
+
+
+<!-- contenedor lado izquierdo -->
+<div class="row">
+    
+    <div  class="side" style="background-color: rgb(42, 54, 165);"  >
+      <h2>PRODUCTOS</h2>
+      
+      <ul class="listaInformacion">
+        <li>Aplicaciones</li>
+        <li>Marca</li>
+        <li>Tipo de Productos</li>
+      </ul>
+      
+      <h5 class="recomendadosTxt">RECOMENDADOS</h5>
+      <div class="imganenIzq" style="height:200px; background-image: url('https://media.istockphoto.com/id/1201141526/es/foto/brazo-masculino-sosteniendo-samsung-galaxy-s-10.jpg?s=612x612&w=0&k=20&c=9xz5L2N9NSqvLlcyF_Nn2jz2XjGmYiVo57n9MMQbpOQ='); background-repeat: no-repeat;background-size: cover ">  </div><br>
+      <div class="imganenIzq" style="height:200px; background-image: url('https://media.istockphoto.com/id/1200721585/es/foto/brazo-masculino-sosteniendo-samsung-galaxy-s-11.jpg?s=612x612&w=0&k=20&c=lDoNr8RMFnYuZHROrgGe1teealkSgVWsNfHMoAAsxXA='); background-repeat: no-repeat;background-size: cover "></div><br>
+      <div class="imganenIzq" style="height:200px; background-image: url('https://media.istockphoto.com/id/1079822580/es/foto/samsung-galaxy-a7-primer-plano-sobre-la-mesa.jpg?s=612x612&w=0&k=20&c=3_gguRCHp1hJSpyAZ33oF_ZRu4IO52cBATAKCrtnytU='); background-repeat: no-repeat;background-size: cover "></div><br>
+      <div class="imganenIzq" style="height:200px; background-image: url('https://media.istockphoto.com/id/697688748/es/foto/s8-de-samsung-adem%C3%A1s-de-smartphone.jpg?s=612x612&w=0&k=20&c=Du9P-bjCGfg3RNqHPBNghIm7XWn9-hf2G_9L9DIuO4s='); background-repeat: no-repeat;background-size: cover "></div><br>
+    </div>
+
+<!-- contenedor lado derecho -->
+    <div class="main">
+       
+      <div class="productos">
+         <div class="informacion" > 
+                    <img class="imagenInformacion"  src="https://i0.wp.com/venbo.shop/wp-content/uploads/2020/07/samsung_a51_2007_1.jpg?fit=600%2C600&ssl=1" alt="">
+                  <h4 class="tituloInformacion" >INFORMACION</h4> 
+                  <ul class="listaInformacion">
+                    <li>Pantalla: 6.5″, 1080 x 2400 pixels</li>
+                    <li>Procesador: Exynos 9611 2.3GHz</li>
+                    <li>RAM: 4GB</li>
+                    <li>Almacenamiento: 128GB</li>
+                    <li>OS: Android 9.0</li>
+                  </ul>
+                  
+          </div>
+        
+                 
+                 
+                    <div >
+                        <div class="detalle">
+                            <div style="background-color: rgb(255, 255, 255);">
+                              <h4 class="titulodetalle" >SAMSUNG</h4>
+                              <h4 class="titulodetalle2" >A51</h4>
+                              <p class="detalle"> Teléfono celular Samsung A51 original. Disponible en los colores negro, blanco y verde. Incluye cargador y audífonos con cable.</p>
+                            
+                            </div>
+
+                            <div style="width: 191px; background-color: rgb(255, 255, 255);">
+                                      <h4>Cantidad Click: <p style="display:inline;" id="cantidadClick">0</p></h4>
+                                      <button class="buttonInfo" onclick="incrementClick()">Mas Informacion</button>
+                                      <button class="buttonInfo" onclick="colorReloj()">Ver Especificacion Tecnica</button>
+                            </div>
+      
+                        </div>
+
+                        <div class="caracteristicas" style="background-color: rgb(255, 255, 255);">
+                          <h4 class="titulodetalle" >CARACTERISTICAS</h4>
+                          <ul class="listaCaracteristicas">
+                            <li class="caracLista">Su potente procesador Octa-core y 6GB de RAM ofrecen gráficos de alta calidad y velocidades ultrarrápidas.</li>
+                            <li class="caracLista">La pantalla Infinity-O de A51 5G logra optimizar la simetría visual. Ahora puedes jugar, visualizar contenido, navegar y realizar múltiples tareas sin interrupción en una pantalla panorámica FHD + de 6.5"</li>
+                            <li class="caracLista">Con un patrón holográfico y un acabado brillante, Galaxy A51 5G está diseñado para deslumbrar. El marco elegante y las curvas suaves proporcionan un agarre cómodo.</li>
+                            <li class="caracLista">Disfruta la alta resolución con una cámara principal de 48MP para fotos nítidas y claras tanto de día como de noche. Una cámara ultra gran angular de 123 °.</li>
+                    
+                          </ul>
+
+                        </div>
+         
+        
+                    </div>
+    
+    
+      </div>
+       
+     
+      <div class="especificaciones" >
+          <div class="especificacionesIzq">
+            <ul class="especificacionesLista">
+              <li>.</li>
+              <li>Dimensiones</li>
+              <li>Peso</li>
+              <li>Materiales</li>
+              <li>Resolución</li>
+              <li>Protección</li>
+            </ul>
+          
+          </div>
+         
+          <div class="especificacionesDer">
+            <ul class="especificacionesLista">
+              <li>ESPECIFICACIONES</li>
+              <li>158.5 x 73.6 x 7.9 mm</li>
+              <li>172 g</li>
+              <li>Frente de vidrio, cuerpo de plástico</li>
+              <li>1080 x 2400 pixels</li>
+              <li>Gorilla Glass 3</li>
+            </ul>
+
+          </div>
+      
+      
+      
+        </div>
+
+      <div>
+      
+        <h3>ACESORIOS</h3>
+      <div class="accesorios">
+      
+        <div class="imganenAccesorios">
+            <div>
+                <img src="https://i.blogs.es/d7718c/son/1366_2000.jpg" alt="Description of the image" width="180" height="160">
+            </div>
+            <div>
+                HOMSCAM QCY-T2C
+            </div>
+        </div>
+
+        <div class="imganenAccesorios">
+          <div>
+              <img src="https://i.blogs.es/4f045d/jbl/1366_2000.jpeg" alt="Description of the image" width="180" height="160">
+          </div>
+          <div>
+               JBL
+          </div>
+      </div>
+
+      <div class="imganenAccesorios">
+        <div>
+            <img src="https://i.blogs.es/6116e5/air/1366_2000.jpg" alt="Description of the image" width="180" height="160">
+        </div>
+        <div>
+          Over-ear
+        </div>
+    </div>
+
+    <div class="imganenAccesorios">
+      <div>
+          <img src="https://i.blogs.es/672425/circu/450_1000.jpeg" alt="Description of the image" width="180" height="160">
+      </div>
+      <div>
+          in ear
+      </div>
+    </div>
+
+    <div class="imganenAccesorios">
+      <div>
+          <img src="https://i.blogs.es/ee5b5a/1/450_1000.jpg" alt="Description of the image" width="180" height="160">
+      </div>
+      <div>
+          TicPods 2 Pro Plus
+      </div>
+    </div>
+
+
+        
+      </div>
+      </div>
+
+     
+    </div>
+  </div>
+  
+ 
+
+</body> 
+<script src="script.js"></script>
+</html>

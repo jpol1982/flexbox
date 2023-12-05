@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+    box-sizing: border-box;
+}
+
+
+/* navegacion PRINCIPAL */
+.nav_principal {
+    padding: 20px 30px;
+    box-shadow: 0 1px 8px rgb(68, 89, 189);
+    background-color: rgb(145, 161, 215);
+}
+
+.nav_principal .division {
+color: #070707;
+margin: 0px;
+width: 0px;
+padding: 1px;
+}
+
+.nav_principal ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.nav_principal li {
+    list-style: none;
+    padding: 0 15px;
+    font-size: 20px;
+   
+}
+
+.nav_principal a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_principal a:hover {
+    color: #b2dfdb;
+}
+
+
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+  }
+
+
+  #Buscador {
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 28px;
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 25px;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    margin-right: 5px;
+  }
+
+
+
+
+/* navegacion LETRAS */
+
+
+.containerTexto {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    justify-content: space-between;
+   
+  }
+
+  .containerTexto .texto
+  {
+    
+    text-align:end;
+    color: rgb(0, 0, 0); 
+    font-size: 50px;
+  }
+
+  .containerTexto > div {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 50px;
+    
+  }
+
+
+/* navegacion SECUNDARIA */
+
+.nav_secundaria {
+
+    padding: 20px 30px;
+    box-shadow: 0 1px 8px rgb(68, 89, 189);
+    background-color: rgb(99, 127, 219);
+}
+
+.nav_secundaria ul{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.nav_secundaria li {
+    list-style: none;
+    font-size: 26px;
+    padding: 0 15px;
+   
+}
+
+.nav_secundaria a {
+    text-decoration: none;
+    color: #080808;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_secundaria a:hover {
+    color: #b2dfdb;
+}
+
+
+
+/*/////////////segunda parte//////////////*/
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  
+  .side {
+   flex: 25%;
+  
+
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main columna */
+  .main {
+    
+    flex: 75%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  
+  .recomendadosTxt
+  {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+  }
+  
+  .imganenIzq {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #aaa;
+    width: 330px;
+    padding: 20px;
+  }
+  
+.informacion {
+    height:500px; 
+    width:400px ;
+    margin: 5px;
+    background-color: rgb(93, 139, 239);
+    padding: 10px;
+   
+  }  
+  
+  .informacion div {
+    padding: 20px;
+    background-color: rgb(207, 52, 52);
+    margin: 20px;
+  }
+
+ .imagenInformacion{
+    height: 200px;
+    width: 380px;
+  }
+
+  .tituloInformacion
+  {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .listaInformacion li
+  {
+    list-style: none;
+    margin-right: 20px;
+    padding: 4px;
+  }
+
+
+
+
+
+  .productos
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .detalle
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .detalle div
+  {
+   width: 400px;
+   height: 210px;
+   padding: 5px;
+   margin: 5px;
+  }
+
+.titulodetalle
+{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.titulodetalle2
+{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+.buttonInfo {
+  background-color: rgb(44, 33, 141);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+  .caracteristicas 
+  {
+   width: 600px;
+   height: 280px;
+   padding: 5px;
+   margin: 5px;
+  }
+
+  .listaCaracteristicas
+  {
+    margin-left: 20px;
+    
+  }
+  .caracLista
+  {
+    padding: 5px;
+    
+  }
+
+  
+
+.especificaciones
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.especificacionesDer
+{
+  width: 600px;
+  height: 250px;
+  margin: 5px;
+  margin-left: -5px;
+}
+.especificacionesIzq
+{
+  width: 400px;
+  height: 250px;
+  margin: 5px;
+}
+
+.especificacionesLista li
+{  list-style: none;
+   border-right: solid; 
+   padding: 10px;
+   background-color: rgb(135, 140, 223);
+}
+
+.especificacionesLista li:nth-child(odd)
+{
+  
+  background-color:  rgb(55, 65, 241);
+}
+
+
+
+
+
+
+.accesorios
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+
+.imganenAccesorios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(93, 139, 239);
+  margin: 10px;
+  padding: 5px;
+  width: 190px;
+  height: 200px;
+  
+}
+
+
+
+  
+  
+  @media screen and (max-width: 700px) {
+    
+
+    .row, .navbar {   
+      flex-direction: column;
+    }
+
+    .nav_secundaria ul
+    {
+        flex-direction: column;
+    }
+
+
+    .flex-container {
+        
+        flex-direction: column;
+      }
+
+      .flex-container .texto
+  { height: 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .flex-container > div {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    
+  }
+    
+  }
+
