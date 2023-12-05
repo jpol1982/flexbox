@@ -157,13 +157,12 @@ padding: 1px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
   }
   
   
   .side {
-   flex: 25%;
-  
-
+    width: 360px;
     background-color: #f1f1f1;
     padding: 20px;
   }
@@ -171,7 +170,7 @@ padding: 1px;
   /* Main columna */
   .main {
     
-    flex: 75%;
+    flex: 50%;
     background-color: rgb(255, 255, 255);
     padding: 20px;
   }
@@ -189,7 +188,7 @@ padding: 1px;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #aaa;
-    width: 330px;
+    width: 320px;
     padding: 20px;
     height: 160px;
     background-repeat: no-repeat;
@@ -451,6 +450,11 @@ padding: 1px;
       flex-direction: column;
     }
     
+    .side{
+      
+      width: 414px;
+    }
+
   }
 
 
