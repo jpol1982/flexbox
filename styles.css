@@ -8,6 +8,11 @@
 
 /* navegacion PRINCIPAL */
 .nav_principal {
+
+   display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 20px 30px;
     box-shadow: 0 1px 8px rgb(68, 89, 189);
     background-color: rgb(145, 161, 215);
